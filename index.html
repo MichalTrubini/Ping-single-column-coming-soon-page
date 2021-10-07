@@ -2,18 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Pod request access landing page</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/6e0aa2134b.js" crossorigin="anonymous"></script>
+
+  <title>Frontend Mentor | Ping coming soon page</title>
+
 </head>
 <body>
-  Publish your podcasts everywhere.
 
-  Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-  Apple Podcasts, Google Podcasts, Pocket Casts and more!
+  <header class="header">
+    <div class="site-logo">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <h1 class="header__heading">
+      We are launching <span class="header_heading--accent">soon!</span>
+    </h1>
+    <p class="header__subtitle">Subscribe and get notified</p>
+    <form novalidate class="email-form">
+      <input type="email" required>
+      <button>Notify Me</button>
+    </form>
+  </header>
 
-  Request access
+  <main class="main">
+    <img src="images/illustration-dashboard.png" alt="">
+  </main>
+
+  <footer class="footer">
+    <div class="footer__social">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+    <p class="footer__copyright">&copy; Copyright Ping. All rights reserved.</p>
+    
+  </footer>
+ 
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Trusoft</a>.
+    </p>
+  </footer>
 </body>
 </html>
