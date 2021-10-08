@@ -277,9 +277,24 @@ body {
 }
 
 .footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
   color: #4f7df3;
   font-size: 1.8rem;
   margin-bottom: 2.7rem;
+}
+
+.footer__social li {
+  margin-right: 1rem;
+}
+
+.footer__social li:last-child {
+  margin-right: 0;
 }
 
 .footer__copyright {
@@ -296,7 +311,6 @@ body {
   -webkit-box-shadow: 0 0 2px 1px #969696;
           box-shadow: 0 0 2px 1px #969696;
   line-height: 3.1rem !important;
-  margin-right: 1rem;
 }
 
 .fab:last-child {

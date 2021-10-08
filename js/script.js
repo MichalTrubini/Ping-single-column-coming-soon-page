@@ -13,6 +13,9 @@ form.addEventListener('input', function (event) {
       // is valid, we remove the error message.
       emailError.textContent = ''; // Reset the content of the message
       emailError.style.display = 'none'; // Reset the visual state of the message
+      email.style.outline = 'none';
+      email.setAttribute("aria-invalid", "false");
+      email.removeAttribute("aria-describedBy")
     }
 
   });
@@ -35,10 +38,15 @@ function showErrorEmail() {
         emailError.textContent = 'Please provide a valid email address';
         emailError.style.display = 'block';
         email.style.outline = '1px solid hsl(354, 100%, 66%)';
+        email.setAttribute("aria-invalid", "true");
+        email.setAttribute("aria-describedBy", 'email-error');
     } else if(email.validity.typeMismatch) {
     // If the field doesn't contain an email address,
     // display the following error message.
     emailError.textContent = 'Please provide a valid email address';
     emailError.style.display = 'block';
+    email.style.outline = '1px solid hsl(354, 100%, 66%)';
+    email.setAttribute("aria-invalid", "true");
+    email.setAttribute("aria-describedBy", 'email-error');
   } 
 }

@@ -90,9 +90,20 @@ body {
     margin-top:12rem;
 
     &__social {
+        display:flex;
+        justify-content: center;
+        list-style: none;
         color:$color-social-icons;
         font-size:1.8rem;
         margin-bottom:2.7rem;
+    }
+
+    &__social li {
+        margin-right:1rem;
+    }
+
+    &__social li:last-child {
+        margin-right:0;
     }
 
     &__copyright {
@@ -109,7 +120,6 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 2px 1px $color-header;
     line-height:3.1rem!important;
-    margin-right:1rem;
 }
 
 .fab:last-child{
