@@ -2,6 +2,7 @@
 
 $Blue: hsl(223, 87%, 63%);
 $Pale-Blue: hsl(223, 100%, 88%);
+$Light-Blue: hsl(223, 81%, 71%);
 $Light-Red: hsl(354, 100%, 66%);
 $Gray: hsl(0, 0%, 59%);
 $Very-Dark-Blue: hsl(209, 33%, 12%);
@@ -11,5 +12,8 @@ $White:#fff;
 
 $background-body:$White;
 $background-button:$Blue;
+$background-button-active:$Light-Blue;
 $color-header-accent:$Very-Dark-Blue;
 $color-header:$Gray;
+$color-placeholder:$Gray;
+$color-social-icons:$Blue;
