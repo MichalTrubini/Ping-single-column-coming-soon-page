@@ -25,7 +25,10 @@
     </h1>
     <p class="header__subtitle">Subscribe and get notified</p>
     <form novalidate class="email-form">
-      <input type="email" placeholder="Your email address..." required>
+      <div>
+        <input type="email" placeholder="Your email address..." required id="email">
+        <p id="email-error"></p>
+      </div>
       <button>Notify Me</button>
     </form>
   </header>
@@ -46,5 +49,7 @@
       Coded by <a href="#">Trusoft</a>.
     </p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
